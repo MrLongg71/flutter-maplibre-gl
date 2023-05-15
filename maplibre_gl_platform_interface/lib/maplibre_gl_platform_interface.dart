@@ -8,7 +8,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
-import 'package:typed_data/typed_data.dart';
+import 'dart:typed_data' as type;
 part 'src/view_wrappers.dart';
 part 'src/annotation.dart';
 part 'src/callbacks.dart';

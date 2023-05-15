@@ -396,7 +396,7 @@ class MethodChannelMaplibreGl extends MapLibreGlPlatform {
   }
 
   @override
-  Future<void> addImage(String name, Uint8List bytes,
+  Future<void> addImage(String name, type.Uint8List bytes,
       [bool sdf = false]) async {
     try {
       return await _channel.invokeMethod('style#addImage', <String, Object>{
@@ -412,7 +412,7 @@ class MethodChannelMaplibreGl extends MapLibreGlPlatform {
 
   @override
   Future<void> addImageSource(
-      String imageSourceId, Uint8List bytes, LatLngQuad coordinates) async {
+      String imageSourceId, type.Uint8List bytes, LatLngQuad coordinates) async {
     try {
       return await _channel
           .invokeMethod('style#addImageSource', <String, Object>{
@@ -443,11 +443,11 @@ class MethodChannelMaplibreGl extends MapLibreGlPlatform {
   @override
   Future<List<Point>> toScreenLocationBatch(Iterable<LatLng> latLngs) async {
     try {
-      var coordinates = Float64List.fromList(latLngs
+      var coordinates = type.Float64List.fromList(latLngs
           .map((e) => [e.latitude, e.longitude])
           .expand((e) => e)
           .toList());
-      Float64List result = await _channel.invokeMethod(
+      type.Float64List result = await _channel.invokeMethod(
           'map#toScreenLocationBatch', {"coordinates": coordinates});
 
       var points = <Point>[];
