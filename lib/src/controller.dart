@@ -1032,7 +1032,7 @@ class MaplibreMapController extends ChangeNotifier {
   /// ```dart
   /// Future<void> addImageFromAsset() async{
   ///   final ByteData bytes = await rootBundle.load("assets/someAssetImage.jpg");
-  ///   final Uint8List list = bytes.buffer.asUint8List();
+  ///   final type.Uint8List list = bytes.buffer.astype.Uint8List();
   ///   await controller.addImage("assetImage", list);
   ///   controller.addSymbol(
   ///    SymbolOptions(
@@ -1056,7 +1056,7 @@ class MaplibreMapController extends ChangeNotifier {
   ///  );
   /// }
   /// ```
-  Future<void> addImage(String name, Uint8List bytes, [bool sdf = false]) {
+  Future<void> addImage(String name, type.Uint8List bytes, [bool sdf = false]) {
     return _mapboxGlPlatform.addImage(name, bytes, sdf);
   }
 
@@ -1082,7 +1082,7 @@ class MaplibreMapController extends ChangeNotifier {
 
   /// Adds an image source to the style currently displayed in the map, so that it can later be referred to by the provided id.
   Future<void> addImageSource(
-      String imageSourceId, Uint8List bytes, LatLngQuad coordinates) {
+      String imageSourceId, type.Uint8List bytes, LatLngQuad coordinates) {
     return _mapboxGlPlatform.addImageSource(imageSourceId, bytes, coordinates);
   }
 
