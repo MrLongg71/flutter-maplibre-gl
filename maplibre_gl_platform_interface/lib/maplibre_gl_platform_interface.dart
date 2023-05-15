@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'dart:typed_data' as type;
+import 'package:flutter/src/services/platform_views.dart' as txt;
 part 'src/view_wrappers.dart';
 part 'src/annotation.dart';
 part 'src/callbacks.dart';

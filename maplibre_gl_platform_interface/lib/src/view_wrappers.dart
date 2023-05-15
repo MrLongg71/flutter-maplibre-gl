@@ -25,10 +25,10 @@ class WrappedPlatformViewsService {
 }
 
 class TextureAndroidViewControllerWrapper
-    implements TextureAndroidViewController {
+    implements txt.TextureAndroidViewController {
   TextureAndroidViewControllerWrapper(this._controller);
 
-  final TextureAndroidViewController _controller;
+  final txt.TextureAndroidViewController _controller;
 
   // @override
   PointTransformer get pointTransformer => _controller.pointTransformer;
