@@ -23,7 +23,7 @@ dependencies:
       ref: main
   maplibre_gl_dart:
     git:
-      url: https://github.com/MrLongg71/maplibre-gl-dart.git
+      url: https://github.com/m0nac0/maplibre-gl-dart.git
       ref: 0.2.2
   image: ^3.0.2
 
