@@ -10,12 +10,12 @@ dependencies:
     git:
       url: https://github.com/MrLongg71/flutter-maplibre-gl.git
       path: maplibre_gl_platform_interface
-      ref: main
+      ref: gl
   maplibre_gl_web:
     git:
       url: https://github.com/MrLongg71/flutter-maplibre-gl.git
       path: maplibre_gl_web
-      ref: main
+      ref: gl
 
 dependency_overrides:
   maplibre_gl_platform_interface:
